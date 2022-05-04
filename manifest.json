@@ -1,0 +1,26 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Tinder Unblur",
+  "description": "Unblur your tinder likes. Simple, small, and privacy preserving.",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+	  "matches": ["https://tinder.com/*"],
+	  "js": ["unblur.js"]
+  }],
+  "action": {
+	  "default_icon": {
+		  "16": "/images/fire_16.png",
+		  "32": "/images/fire_32.png",
+		  "48": "/images/fire_48.png",
+		  "128": "/images/fire_128.png"
+	  }
+  },
+  "icons": {
+	  "16": "/images/fire_16.png",
+	  "32": "/images/fire_32.png",
+	  "48": "/images/fire_48.png",
+	  "128": "/images/fire_128.png"
+	}
+}
